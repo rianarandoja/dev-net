@@ -59,7 +59,7 @@ router.post(
     if (typeof body.skills !== 'undefined') {
       profileFields.skills = body.skills.split(',')
     }
-
+    profileFields.social = {}
     if (body.youtube) profileFields.social.youtube = body.youtube
     if (body.twitter) profileFields.social.twitter = body.twitter
     if (body.linkedin) profileFields.social.linkedin = body.linkedin
